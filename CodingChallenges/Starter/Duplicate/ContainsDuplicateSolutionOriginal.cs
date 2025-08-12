@@ -1,22 +1,20 @@
-﻿namespace GrokkingCodingInterviewSolutions.Warmup.ContainsDuplicate
+﻿namespace CodingChallenges.Starter.Duplicate;
+public class ContainsDuplicateSolutionOriginal
 {
-    public class ContainsDuplicateSolutionOriginal
-    {
-        public bool ContainsDuplicate(int[] nums) {
-            HashSet<int> hashNums = new HashSet<int>();
+    public static bool ContainsDuplicate(int[] nums) {
+        HashSet<int> hashNums = new HashSet<int>();
 
-            foreach(int num in nums)
+        foreach(int num in nums)
+        {
+            if(hashNums.Contains(num))
             {
-                if(hashNums.Contains(num))
-                {
-                    return true;
-                }
-
-                hashNums.Add(num);
+                return true;
             }
 
-            return false;
+            hashNums.Add(num);
         }
+
+        return false;
     }
 }
 

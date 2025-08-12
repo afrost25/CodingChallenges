@@ -1,4 +1,4 @@
-namespace GrokkingCodingInterviewSolutions.Warmup.Pangram
+namespace CodingChallenges.Starter.Pangram
 {
     public class PangramSolutionGrokkModified
     {
